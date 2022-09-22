@@ -1,0 +1,11 @@
+<h1>Flats</h1>
+
+<ul class="d-flex justify-content-center gap-4 flex-wrap">
+  <% @flats.each do |flat| %>
+  <div class="w-25">
+    <h2> <%= flat['name'] %> </h2>
+    <p> <%= flat['price'] %> <%= flat['priceCurrency'] %> </p>
+    <img class="w-100" src="<%= flat['imageUrl'] %>" alt="">
+  </div>
+  <% end %>
+</ul>
